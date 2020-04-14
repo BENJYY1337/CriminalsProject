@@ -1,0 +1,19 @@
+{
+    "name": "benjyy1337/criminals-project",
+    "description": "CriminalsProject",
+    "authors": [
+        {
+            "name": "BENJYY1337",
+            "email": "pernot.benjamin@outlook.fr"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.6.2",
+        "symfony/yaml": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "models/Entities/"
+        }
+    }
+}
