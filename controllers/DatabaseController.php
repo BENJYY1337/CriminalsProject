@@ -1,6 +1,6 @@
 <?php
 
-require_once "controllers/EntityManager.php";
+require_once __DIR__ . "\\EntityManager.php";
 
 // Afficher la liste des agents
 $agentRepository = $entityManager->getRepository(Agents::class);

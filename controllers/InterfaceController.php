@@ -1,8 +1,7 @@
 <?php
-session_start();
-require_once "./EntityManager.php";
+require_once __DIR__  . "\\EntityManager.php";
 
-// $ficheCriminelList;
+$ficheCriminelList;
 $agentRepository = $entityManager->getRepository(Agents::class);
 $agents = $agentRepository->findAll();
 
