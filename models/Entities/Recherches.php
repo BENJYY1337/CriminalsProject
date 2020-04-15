@@ -1,6 +1,6 @@
 <?php
 
-
+// namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -33,7 +33,7 @@ class Recherches
      *
      * @ORM\Column(name="prenom_r", type="string", length=255, nullable=false)
      */
-    private $prenomR;
+    private $prenomR = '';
 
     /**
      * @var \DateTime
@@ -112,6 +112,36 @@ class Recherches
      */
     private $updatedBy;
 
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Entity\Recherches", inversedBy="recherchesIdR")
+     * @ORM\JoinTable(name="acolytes",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="recherches_id_r", referencedColumnName="id_r")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="recherches_id_r1", referencedColumnName="id_r")
+     *   }
+     * )
+     */
+    private $recherchesIdR1;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Entity\Temoignages", mappedBy="recherchesIdR")
+     */
+    private $temoignagesIdTemoignage;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->recherchesIdR1 = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->temoignagesIdTemoignage = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
 
     /**
@@ -434,5 +464,77 @@ class Recherches
     public function getUpdatedBy()
     {
         return $this->updatedBy;
+    }
+
+    /**
+     * Add recherchesIdR1.
+     *
+     * @param \Entity\Recherches $recherchesIdR1
+     *
+     * @return Recherches
+     */
+    public function addRecherchesIdR1(\Entity\Recherches $recherchesIdR1)
+    {
+        $this->recherchesIdR1[] = $recherchesIdR1;
+
+        return $this;
+    }
+
+    /**
+     * Remove recherchesIdR1.
+     *
+     * @param \Entity\Recherches $recherchesIdR1
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeRecherchesIdR1(\Entity\Recherches $recherchesIdR1)
+    {
+        return $this->recherchesIdR1->removeElement($recherchesIdR1);
+    }
+
+    /**
+     * Get recherchesIdR1.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRecherchesIdR1()
+    {
+        return $this->recherchesIdR1;
+    }
+
+    /**
+     * Add temoignagesIdTemoignage.
+     *
+     * @param \Entity\Temoignages $temoignagesIdTemoignage
+     *
+     * @return Recherches
+     */
+    public function addTemoignagesIdTemoignage(\Entity\Temoignages $temoignagesIdTemoignage)
+    {
+        $this->temoignagesIdTemoignage[] = $temoignagesIdTemoignage;
+
+        return $this;
+    }
+
+    /**
+     * Remove temoignagesIdTemoignage.
+     *
+     * @param \Entity\Temoignages $temoignagesIdTemoignage
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeTemoignagesIdTemoignage(\Entity\Temoignages $temoignagesIdTemoignage)
+    {
+        return $this->temoignagesIdTemoignage->removeElement($temoignagesIdTemoignage);
+    }
+
+    /**
+     * Get temoignagesIdTemoignage.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTemoignagesIdTemoignage()
+    {
+        return $this->temoignagesIdTemoignage;
     }
 }

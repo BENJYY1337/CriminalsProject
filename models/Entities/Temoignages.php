@@ -1,6 +1,6 @@
 <?php
 
-
+// namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -91,6 +91,28 @@ class Temoignages
      */
     private $updatedBy;
 
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="Entity\Recherches", inversedBy="temoignagesIdTemoignage")
+     * @ORM\JoinTable(name="signalements",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="temoignages_id_temoignage", referencedColumnName="id_temoignage")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="recherches_id_r", referencedColumnName="id_r")
+     *   }
+     * )
+     */
+    private $recherchesIdR;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->recherchesIdR = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
 
     /**
@@ -341,5 +363,41 @@ class Temoignages
     public function getUpdatedBy()
     {
         return $this->updatedBy;
+    }
+
+    /**
+     * Add recherchesIdR.
+     *
+     * @param \Entity\Recherches $recherchesIdR
+     *
+     * @return Temoignages
+     */
+    public function addRecherchesIdR(\Entity\Recherches $recherchesIdR)
+    {
+        $this->recherchesIdR[] = $recherchesIdR;
+
+        return $this;
+    }
+
+    /**
+     * Remove recherchesIdR.
+     *
+     * @param \Entity\Recherches $recherchesIdR
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeRecherchesIdR(\Entity\Recherches $recherchesIdR)
+    {
+        return $this->recherchesIdR->removeElement($recherchesIdR);
+    }
+
+    /**
+     * Get recherchesIdR.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRecherchesIdR()
+    {
+        return $this->recherchesIdR;
     }
 }

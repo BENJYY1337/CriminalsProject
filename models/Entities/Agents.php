@@ -1,6 +1,6 @@
 <?php
 
-
+// namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 

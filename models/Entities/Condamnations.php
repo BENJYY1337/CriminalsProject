@@ -1,6 +1,6 @@
 <?php
 
-
+// namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -78,11 +78,11 @@ class Condamnations
     private $updatedBy;
 
     /**
-     * @var \Recherches
+     * @var \Entity\Recherches
      *
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="NONE")
-     * @ORM\OneToOne(targetEntity="Recherches")
+     * @ORM\OneToOne(targetEntity="Entity\Recherches")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="recherches_id_r", referencedColumnName="id_r")
      * })
@@ -310,11 +310,11 @@ class Condamnations
     /**
      * Set recherchesIdR.
      *
-     * @param \Recherches $recherchesIdR
+     * @param \Entity\Recherches $recherchesIdR
      *
      * @return Condamnations
      */
-    public function setRecherchesIdR(\Recherches $recherchesIdR)
+    public function setRecherchesIdR(\Entity\Recherches $recherchesIdR)
     {
         $this->recherchesIdR = $recherchesIdR;
 
@@ -324,7 +324,7 @@ class Condamnations
     /**
      * Get recherchesIdR.
      *
-     * @return \Recherches
+     * @return \Entity\Recherches
      */
     public function getRecherchesIdR()
     {
