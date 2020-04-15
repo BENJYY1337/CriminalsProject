@@ -1,33 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
+include "./views/header.php";
+?>
 
-require_once "controllers/EntityManager.php";
+<body>
+    <?php
+    if (isset($_REQUEST['page_id'])) {
+        if ($_REQUEST['page_id'] === "login") {
+            include "./views/login.php";
+        } else if ($_REQUEST['page_id'] === "interface") {
+            include "./views/interface.php";
+        } else {
+            include "./views/404.php";
+        }
+    } else {
+        include "./views/login.php";
+    }
+    ?>
 
-// Afficher la liste des agents
-$agentRepository = $entityManager->getRepository(Agents::class);
-$agents = $agentRepository->findAll();
+</body>
 
-foreach ($agents as $agent) {
-    var_dump($agent);
-}
-
-// Ajouter un agent
-/*$agent = new Agents();
-$agent->setPseudoA("tmlp");
-$agent->setMotDePasseA(password_hash("tmlp1", PASSWORD_BCRYPT));
-$agent->setNiveauAccreditationA(3);
-// tell Doctrine you want to (eventually) save the Product (no queries yet)
-$entityManager->persist($agent);
-// actually executes the queries (i.e. the INSERT query)
-$entityManager->flush();*/
-
-// Modifier un agent
-$id = 4;
-$agent = $entityManager->getRepository(Agents::class)->find($id);
-if (!$agent) {
-    throw $this->createNotFoundException(
-        'No product found for id ' . $id
-    );
-}
-$agent->setPseudoA("tplbg");
-$entityManager->flush();
-var_dump($agent);
+</html>
