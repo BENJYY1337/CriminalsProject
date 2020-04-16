@@ -1,6 +1,6 @@
 <?php
 
-// namespace benjamin;
+namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Recherches
  *
  * @ORM\Table(name="recherches")
- * @ORM\Entity
+ * @ORM\benjamin
  */
 class Recherches
 {
@@ -469,11 +469,11 @@ class Recherches
     /**
      * Add recherchesIdR1.
      *
-     * @param \Entity\Recherches $recherchesIdR1
+     * @param \benjamin\Recherches $recherchesIdR1
      *
      * @return Recherches
      */
-    public function addRecherchesIdR1(\Entity\Recherches $recherchesIdR1)
+    public function addRecherchesIdR1(\benjamin\Recherches $recherchesIdR1)
     {
         $this->recherchesIdR1[] = $recherchesIdR1;
 
@@ -483,11 +483,11 @@ class Recherches
     /**
      * Remove recherchesIdR1.
      *
-     * @param \Entity\Recherches $recherchesIdR1
+     * @param \benjamin\Recherches $recherchesIdR1
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeRecherchesIdR1(\Entity\Recherches $recherchesIdR1)
+    public function removeRecherchesIdR1(\benjamin\Recherches $recherchesIdR1)
     {
         return $this->recherchesIdR1->removeElement($recherchesIdR1);
     }
@@ -505,11 +505,11 @@ class Recherches
     /**
      * Add temoignagesIdTemoignage.
      *
-     * @param \Entity\Temoignages $temoignagesIdTemoignage
+     * @param \benjamin\Temoignages $temoignagesIdTemoignage
      *
      * @return Recherches
      */
-    public function addTemoignagesIdTemoignage(\Entity\Temoignages $temoignagesIdTemoignage)
+    public function addTemoignagesIdTemoignage(\benjamin\Temoignages $temoignagesIdTemoignage)
     {
         $this->temoignagesIdTemoignage[] = $temoignagesIdTemoignage;
 
@@ -519,11 +519,11 @@ class Recherches
     /**
      * Remove temoignagesIdTemoignage.
      *
-     * @param \Entity\Temoignages $temoignagesIdTemoignage
+     * @param \benjamin\Temoignages $temoignagesIdTemoignage
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeTemoignagesIdTemoignage(\Entity\Temoignages $temoignagesIdTemoignage)
+    public function removeTemoignagesIdTemoignage(\benjamin\Temoignages $temoignagesIdTemoignage)
     {
         return $this->temoignagesIdTemoignage->removeElement($temoignagesIdTemoignage);
     }

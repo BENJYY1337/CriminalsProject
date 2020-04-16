@@ -1,6 +1,6 @@
 <?php
 
-// namespace benjamin;
+namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -314,7 +314,7 @@ class Condamnations
      *
      * @return Condamnations
      */
-    public function setRecherchesIdR(\Entity\Recherches $recherchesIdR)
+    public function setRecherchesIdR(\benjamin\Recherches $recherchesIdR)
     {
         $this->recherchesIdR = $recherchesIdR;
 

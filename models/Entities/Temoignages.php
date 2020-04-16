@@ -1,6 +1,6 @@
 <?php
 
-// namespace benjamin;
+namespace benjamin;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -372,7 +372,7 @@ class Temoignages
      *
      * @return Temoignages
      */
-    public function addRecherchesIdR(\Entity\Recherches $recherchesIdR)
+    public function addRecherchesIdR(\benjamin\Recherches $recherchesIdR)
     {
         $this->recherchesIdR[] = $recherchesIdR;
 
@@ -386,7 +386,7 @@ class Temoignages
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeRecherchesIdR(\Entity\Recherches $recherchesIdR)
+    public function removeRecherchesIdR(\benjamin\Recherches $recherchesIdR)
     {
         return $this->recherchesIdR->removeElement($recherchesIdR);
     }
