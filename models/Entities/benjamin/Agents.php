@@ -41,4 +41,86 @@ class Agents
      * @ORM\Column(name="niveau_accreditation_a", type="integer", nullable=false)
      */
     private $niveauAccreditationA;
+
+    /**
+     * Get idAgents.
+     *
+     * @return int
+     */
+    public function getIdAgents()
+    {
+        return $this->idAgents;
+    }
+
+    /**
+     * Set pseudoA.
+     *
+     * @param string $pseudoA
+     *
+     * @return Agents
+     */
+    public function setPseudoA($pseudoA)
+    {
+        $this->pseudoA = $pseudoA;
+
+        return $this;
+    }
+
+    /**
+     * Get pseudoA.
+     *
+     * @return string
+     */
+    public function getPseudoA()
+    {
+        return $this->pseudoA;
+    }
+
+    /**
+     * Set motDePasseA.
+     *
+     * @param string $motDePasseA
+     *
+     * @return Agents
+     */
+    public function setMotDePasseA($motDePasseA)
+    {
+        $this->motDePasseA = $motDePasseA;
+
+        return $this;
+    }
+
+    /**
+     * Get motDePasseA.
+     *
+     * @return string
+     */
+    public function getMotDePasseA()
+    {
+        return $this->motDePasseA;
+    }
+
+    /**
+     * Set niveauAccreditationA.
+     *
+     * @param int $niveauAccreditationA
+     *
+     * @return Agents
+     */
+    public function setNiveauAccreditationA($niveauAccreditationA)
+    {
+        $this->niveauAccreditationA = $niveauAccreditationA;
+
+        return $this;
+    }
+
+    /**
+     * Get niveauAccreditationA.
+     *
+     * @return int
+     */
+    public function getNiveauAccreditationA()
+    {
+        return $this->niveauAccreditationA;
+    }
 }

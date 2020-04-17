@@ -6,14 +6,14 @@ class InterfaceController
 
     public function getAgentsList()
     {
-        /*$ficheCriminelList;
-        $agentRepository = $entityManager->getRepository(Agents::class);
-        $agents = $agentRepository->findAll();
+        // $ficheCriminelList;
+        // $agentRepository = $entityManager->getRepository(Agents::class);
+        // $agents = $agentRepository->findAll();
 
-        foreach ($agents as $agent) {
-            var_dump($agent);
-        }
+        // foreach ($agents as $agent) {
+        //     var_dump($agent);
+        // }
 
-        return $agents;*/
+        // return $agents;
     }
 }

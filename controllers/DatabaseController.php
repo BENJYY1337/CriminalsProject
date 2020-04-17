@@ -2,6 +2,8 @@
 
 require_once __DIR__ . "\\EntityManager.php";
 
+use benjamin\Agents;
+
 // Afficher la liste des agents
 $agentRepository = $entityManager->getRepository(Agents::class);
 $agents = $agentRepository->findAll();

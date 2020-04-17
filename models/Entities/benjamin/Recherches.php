@@ -142,4 +142,398 @@ class Recherches
         $this->recherchesIdR1 = new \Doctrine\Common\Collections\ArrayCollection();
         $this->temoignagesIdTemoignage = new \Doctrine\Common\Collections\ArrayCollection();
     }
+
+    /**
+     * Get idR.
+     *
+     * @return int
+     */
+    public function getIdR()
+    {
+        return $this->idR;
+    }
+
+    /**
+     * Set nomR.
+     *
+     * @param string $nomR
+     *
+     * @return Recherches
+     */
+    public function setNomR($nomR)
+    {
+        $this->nomR = $nomR;
+
+        return $this;
+    }
+
+    /**
+     * Get nomR.
+     *
+     * @return string
+     */
+    public function getNomR()
+    {
+        return $this->nomR;
+    }
+
+    /**
+     * Set prenomR.
+     *
+     * @param string $prenomR
+     *
+     * @return Recherches
+     */
+    public function setPrenomR($prenomR)
+    {
+        $this->prenomR = $prenomR;
+
+        return $this;
+    }
+
+    /**
+     * Get prenomR.
+     *
+     * @return string
+     */
+    public function getPrenomR()
+    {
+        return $this->prenomR;
+    }
+
+    /**
+     * Set dateNaissanceR.
+     *
+     * @param \DateTime $dateNaissanceR
+     *
+     * @return Recherches
+     */
+    public function setDateNaissanceR($dateNaissanceR)
+    {
+        $this->dateNaissanceR = $dateNaissanceR;
+
+        return $this;
+    }
+
+    /**
+     * Get dateNaissanceR.
+     *
+     * @return \DateTime
+     */
+    public function getDateNaissanceR()
+    {
+        return $this->dateNaissanceR;
+    }
+
+    /**
+     * Set signeDistinctifR.
+     *
+     * @param string $signeDistinctifR
+     *
+     * @return Recherches
+     */
+    public function setSigneDistinctifR($signeDistinctifR)
+    {
+        $this->signeDistinctifR = $signeDistinctifR;
+
+        return $this;
+    }
+
+    /**
+     * Get signeDistinctifR.
+     *
+     * @return string
+     */
+    public function getSigneDistinctifR()
+    {
+        return $this->signeDistinctifR;
+    }
+
+    /**
+     * Set profilPsyR.
+     *
+     * @param string|null $profilPsyR
+     *
+     * @return Recherches
+     */
+    public function setProfilPsyR($profilPsyR = null)
+    {
+        $this->profilPsyR = $profilPsyR;
+
+        return $this;
+    }
+
+    /**
+     * Get profilPsyR.
+     *
+     * @return string|null
+     */
+    public function getProfilPsyR()
+    {
+        return $this->profilPsyR;
+    }
+
+    /**
+     * Set niveauAccreditation.
+     *
+     * @param int $niveauAccreditation
+     *
+     * @return Recherches
+     */
+    public function setNiveauAccreditation($niveauAccreditation)
+    {
+        $this->niveauAccreditation = $niveauAccreditation;
+
+        return $this;
+    }
+
+    /**
+     * Get niveauAccreditation.
+     *
+     * @return int
+     */
+    public function getNiveauAccreditation()
+    {
+        return $this->niveauAccreditation;
+    }
+
+    /**
+     * Set nomPhotoR.
+     *
+     * @param string $nomPhotoR
+     *
+     * @return Recherches
+     */
+    public function setNomPhotoR($nomPhotoR)
+    {
+        $this->nomPhotoR = $nomPhotoR;
+
+        return $this;
+    }
+
+    /**
+     * Get nomPhotoR.
+     *
+     * @return string
+     */
+    public function getNomPhotoR()
+    {
+        return $this->nomPhotoR;
+    }
+
+    /**
+     * Set informationsR.
+     *
+     * @param string|null $informationsR
+     *
+     * @return Recherches
+     */
+    public function setInformationsR($informationsR = null)
+    {
+        $this->informationsR = $informationsR;
+
+        return $this;
+    }
+
+    /**
+     * Get informationsR.
+     *
+     * @return string|null
+     */
+    public function getInformationsR()
+    {
+        return $this->informationsR;
+    }
+
+    /**
+     * Set derniereAdresseR.
+     *
+     * @param string $derniereAdresseR
+     *
+     * @return Recherches
+     */
+    public function setDerniereAdresseR($derniereAdresseR)
+    {
+        $this->derniereAdresseR = $derniereAdresseR;
+
+        return $this;
+    }
+
+    /**
+     * Get derniereAdresseR.
+     *
+     * @return string
+     */
+    public function getDerniereAdresseR()
+    {
+        return $this->derniereAdresseR;
+    }
+
+    /**
+     * Set createdAt.
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Recherches
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt.
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set createdBy.
+     *
+     * @param string $createdBy
+     *
+     * @return Recherches
+     */
+    public function setCreatedBy($createdBy)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy.
+     *
+     * @return string
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * Set updatedAt.
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Recherches
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt.
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set updatedBy.
+     *
+     * @param string $updatedBy
+     *
+     * @return Recherches
+     */
+    public function setUpdatedBy($updatedBy)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy.
+     *
+     * @return string
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
+    }
+
+    /**
+     * Add recherchesIdR1.
+     *
+     * @param \benjamin\\Recherches $recherchesIdR1
+     *
+     * @return Recherches
+     */
+    public function addRecherchesIdR1(\benjamin\Recherches $recherchesIdR1)
+    {
+        $this->recherchesIdR1[] = $recherchesIdR1;
+
+        return $this;
+    }
+
+    /**
+     * Remove recherchesIdR1.
+     *
+     * @param \benjamin\Recherches $recherchesIdR1
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeRecherchesIdR1(\benjamin\Recherches $recherchesIdR1)
+    {
+        return $this->recherchesIdR1->removeElement($recherchesIdR1);
+    }
+
+    /**
+     * Get recherchesIdR1.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRecherchesIdR1()
+    {
+        return $this->recherchesIdR1;
+    }
+
+    /**
+     * Add temoignagesIdTemoignage.
+     *
+     * @param \benjamin\Temoignages $temoignagesIdTemoignage
+     *
+     * @return Recherches
+     */
+    public function addTemoignagesIdTemoignage(\benjamin\Temoignages $temoignagesIdTemoignage)
+    {
+        $this->temoignagesIdTemoignage[] = $temoignagesIdTemoignage;
+
+        return $this;
+    }
+
+    /**
+     * Remove temoignagesIdTemoignage.
+     *
+     * @param \benjamin\Temoignages $temoignagesIdTemoignage
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeTemoignagesIdTemoignage(\benjamin\Temoignages $temoignagesIdTemoignage)
+    {
+        return $this->temoignagesIdTemoignage->removeElement($temoignagesIdTemoignage);
+    }
+
+    /**
+     * Get temoignagesIdTemoignage.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getTemoignagesIdTemoignage()
+    {
+        return $this->temoignagesIdTemoignage;
+    }
 }

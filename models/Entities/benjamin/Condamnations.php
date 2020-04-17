@@ -88,4 +88,244 @@ class Condamnations
      * })
      */
     private $recherchesIdR;
+
+    /**
+     * Set idC.
+     *
+     * @param int $idC
+     *
+     * @return Condamnations
+     */
+    public function setIdC($idC)
+    {
+        $this->idC = $idC;
+
+        return $this;
+    }
+
+    /**
+     * Get idC.
+     *
+     * @return int
+     */
+    public function getIdC()
+    {
+        return $this->idC;
+    }
+
+    /**
+     * Set libelleAffaireC.
+     *
+     * @param string $libelleAffaireC
+     *
+     * @return Condamnations
+     */
+    public function setLibelleAffaireC($libelleAffaireC)
+    {
+        $this->libelleAffaireC = $libelleAffaireC;
+
+        return $this;
+    }
+
+    /**
+     * Get libelleAffaireC.
+     *
+     * @return string
+     */
+    public function getLibelleAffaireC()
+    {
+        return $this->libelleAffaireC;
+    }
+
+    /**
+     * Set dateC.
+     *
+     * @param \DateTime $dateC
+     *
+     * @return Condamnations
+     */
+    public function setDateC($dateC)
+    {
+        $this->dateC = $dateC;
+
+        return $this;
+    }
+
+    /**
+     * Get dateC.
+     *
+     * @return \DateTime
+     */
+    public function getDateC()
+    {
+        return $this->dateC;
+    }
+
+    /**
+     * Set dureeC.
+     *
+     * @param int $dureeC
+     *
+     * @return Condamnations
+     */
+    public function setDureeC($dureeC)
+    {
+        $this->dureeC = $dureeC;
+
+        return $this;
+    }
+
+    /**
+     * Get dureeC.
+     *
+     * @return int
+     */
+    public function getDureeC()
+    {
+        return $this->dureeC;
+    }
+
+    /**
+     * Set dateLiberationC.
+     *
+     * @param \DateTime|null $dateLiberationC
+     *
+     * @return Condamnations
+     */
+    public function setDateLiberationC($dateLiberationC = null)
+    {
+        $this->dateLiberationC = $dateLiberationC;
+
+        return $this;
+    }
+
+    /**
+     * Get dateLiberationC.
+     *
+     * @return \DateTime|null
+     */
+    public function getDateLiberationC()
+    {
+        return $this->dateLiberationC;
+    }
+
+    /**
+     * Set createdAt.
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Condamnations
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt.
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set createdBy.
+     *
+     * @param string $createdBy
+     *
+     * @return Condamnations
+     */
+    public function setCreatedBy($createdBy)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy.
+     *
+     * @return string
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * Set updatedAt.
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Condamnations
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt.
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set updatedBy.
+     *
+     * @param string $updatedBy
+     *
+     * @return Condamnations
+     */
+    public function setUpdatedBy($updatedBy)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy.
+     *
+     * @return string
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
+    }
+
+    /**
+     * Set recherchesIdR.
+     *
+     * @param \benjamin\Recherches $recherchesIdR
+     *
+     * @return Condamnations
+     */
+    public function setRecherchesIdR(\benjamin\Recherches $recherchesIdR)
+    {
+        $this->recherchesIdR = $recherchesIdR;
+
+        return $this;
+    }
+
+    /**
+     * Get recherchesIdR.
+     *
+     * @return \benjamin\\Recherches
+     */
+    public function getRecherchesIdR()
+    {
+        return $this->recherchesIdR;
+    }
 }

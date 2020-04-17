@@ -113,4 +113,290 @@ class Temoignages
     {
         $this->recherchesIdR = new \Doctrine\Common\Collections\ArrayCollection();
     }
+
+    /**
+     * Get idTemoignage.
+     *
+     * @return int
+     */
+    public function getIdTemoignage()
+    {
+        return $this->idTemoignage;
+    }
+
+    /**
+     * Set localisationT.
+     *
+     * @param string $localisationT
+     *
+     * @return Temoignages
+     */
+    public function setLocalisationT($localisationT)
+    {
+        $this->localisationT = $localisationT;
+
+        return $this;
+    }
+
+    /**
+     * Get localisationT.
+     *
+     * @return string
+     */
+    public function getLocalisationT()
+    {
+        return $this->localisationT;
+    }
+
+    /**
+     * Set natureT.
+     *
+     * @param string $natureT
+     *
+     * @return Temoignages
+     */
+    public function setNatureT($natureT)
+    {
+        $this->natureT = $natureT;
+
+        return $this;
+    }
+
+    /**
+     * Get natureT.
+     *
+     * @return string
+     */
+    public function getNatureT()
+    {
+        return $this->natureT;
+    }
+
+    /**
+     * Set temoinT.
+     *
+     * @param string $temoinT
+     *
+     * @return Temoignages
+     */
+    public function setTemoinT($temoinT)
+    {
+        $this->temoinT = $temoinT;
+
+        return $this;
+    }
+
+    /**
+     * Get temoinT.
+     *
+     * @return string
+     */
+    public function getTemoinT()
+    {
+        return $this->temoinT;
+    }
+
+    /**
+     * Set numeroTelTemoinT.
+     *
+     * @param string|null $numeroTelTemoinT
+     *
+     * @return Temoignages
+     */
+    public function setNumeroTelTemoinT($numeroTelTemoinT = null)
+    {
+        $this->numeroTelTemoinT = $numeroTelTemoinT;
+
+        return $this;
+    }
+
+    /**
+     * Get numeroTelTemoinT.
+     *
+     * @return string|null
+     */
+    public function getNumeroTelTemoinT()
+    {
+        return $this->numeroTelTemoinT;
+    }
+
+    /**
+     * Set adresseTemoinT.
+     *
+     * @param string|null $adresseTemoinT
+     *
+     * @return Temoignages
+     */
+    public function setAdresseTemoinT($adresseTemoinT = null)
+    {
+        $this->adresseTemoinT = $adresseTemoinT;
+
+        return $this;
+    }
+
+    /**
+     * Get adresseTemoinT.
+     *
+     * @return string|null
+     */
+    public function getAdresseTemoinT()
+    {
+        return $this->adresseTemoinT;
+    }
+
+    /**
+     * Set dateS.
+     *
+     * @param \DateTime $dateS
+     *
+     * @return Temoignages
+     */
+    public function setDateS($dateS)
+    {
+        $this->dateS = $dateS;
+
+        return $this;
+    }
+
+    /**
+     * Get dateS.
+     *
+     * @return \DateTime
+     */
+    public function getDateS()
+    {
+        return $this->dateS;
+    }
+
+    /**
+     * Set createdAt.
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return Temoignages
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt.
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set createdBy.
+     *
+     * @param string $createdBy
+     *
+     * @return Temoignages
+     */
+    public function setCreatedBy($createdBy)
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
+
+    /**
+     * Get createdBy.
+     *
+     * @return string
+     */
+    public function getCreatedBy()
+    {
+        return $this->createdBy;
+    }
+
+    /**
+     * Set updatedAt.
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Temoignages
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt.
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set updatedBy.
+     *
+     * @param string $updatedBy
+     *
+     * @return Temoignages
+     */
+    public function setUpdatedBy($updatedBy)
+    {
+        $this->updatedBy = $updatedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedBy.
+     *
+     * @return string
+     */
+    public function getUpdatedBy()
+    {
+        return $this->updatedBy;
+    }
+
+    /**
+     * Add recherchesIdR.
+     *
+     * @param \benjamin\Recherches $recherchesIdR
+     *
+     * @return Temoignages
+     */
+    public function addRecherchesIdR(\benjamin\Recherches $recherchesIdR)
+    {
+        $this->recherchesIdR[] = $recherchesIdR;
+
+        return $this;
+    }
+
+    /**
+     * Remove recherchesIdR.
+     *
+     * @param \benjamin\Recherches $recherchesIdR
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeRecherchesIdR(\benjamin\Recherches $recherchesIdR)
+    {
+        return $this->recherchesIdR->removeElement($recherchesIdR);
+    }
+
+    /**
+     * Get recherchesIdR.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getRecherchesIdR()
+    {
+        return $this->recherchesIdR;
+    }
 }

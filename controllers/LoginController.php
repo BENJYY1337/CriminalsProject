@@ -3,6 +3,8 @@
 session_start();
 require_once __DIR__ . "\\EntityManager.php";
 
+use benjamin\Agents;
+
 class LoginController
 {
     private $entityManager;
